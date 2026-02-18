@@ -46,7 +46,7 @@ export default function HomePage() {
 
       <div className={styles.logo}>
         <picture>
-          <img src="src/assets/img/acai-beats-logo.png" alt="" />
+          <img src="/acai-beats-logo.png" alt="" />
         </picture>
         <p>O melhor açaí da cidade, entregue na sua casa.</p>
       </div>

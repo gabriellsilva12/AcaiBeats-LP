@@ -148,14 +148,14 @@
   opacity: 0;
 }
 .mobileMenu.active .line3 {
-  background-color: #f79336;
+  background-color: #ff912b;
   transform: rotate(45deg) translate(-8px, -7px);
 }
 
 
 .button {
   cursor: pointer;
-  border: solid 1px #000000;
+  border: solid 2px #ffffff;
   background-color: #f79336;
   margin-top: 50px;
   padding: 20px;
