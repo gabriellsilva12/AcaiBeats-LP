@@ -14,7 +14,7 @@
 }
 
 .menu span {
-  transition: 2.2s;
+  transition: 2.2s ease;
   z-index: 122;
   border-radius: 60px;
   height: 35px;
