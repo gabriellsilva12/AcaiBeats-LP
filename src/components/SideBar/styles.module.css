@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+.menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 30px;
+  height: 30px;
+  z-index: 122;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.menu span {
+  transition: 2.2s;
+  z-index: 122;
+  border-radius: 60px;
+  height: 35px;
+  width: 37px;
+  border: solid 1.5px #b579ff00;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu.active .line1 {
+  border: solid 1.5px #b579ff;
+  background-color: white;
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.menu.active .line2 {
+  opacity: 0;
+}
+.menu.active .line3 {
+  border: solid 2px #b579ff;
+  background-color: white;
+  transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.containerMenu {
+  border-left: solid 0px #ffffff00;
+  border-top: solid 0px #ffffff00;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 90px 40px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  transform: translate(224px, 595px);
+  transition: 2s;
+  background-color: #00000000;
+  font-family: Arial, Helvetica, sans-serif;
+
+  a {
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
+.containerMenu.active {
+  position: absolute;
+  transition: 2s;
+  border-left: solid 3px #fff;
+  border-top: solid 3px #ffffff;
+  transform: translate(0px, 0px);
+  background-color: #b579ff;
+}
+.containerMenu.active a {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.footerContainer {
+  transition: all 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 2px;
+  color: white;
+  position: absolute;
+  margin-bottom: 20px;
+  right: 22px;
+  bottom: 0;
+}
+
+.footerContainer a {
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: white;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .containerMenu.active {
+    transition: 2s;
+    border-left: solid 3px #fff;
+    border-top: solid 3px #ffffff;
+    transform: translate(0px, 0px);
+    background-color: #b579ff;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+  }
+  .containerMenu.active a {
+    opacity: 1;
+    color: rgb(255, 252, 252);
+  }
+}
+
+@media (min-width: 999px) {
+  .footerContainer {
+    letter-spacing: 0.3rem;
+    display: flex;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 2px;
+    color: white;
+    position: absolute;
+    margin-bottom: 20px;
+    right: 22px;
+    bottom: 0;
+  }
+  .footerContainer a {
+    letter-spacing: 0.1rem;
+  }
+}
