@@ -1,6 +1,14 @@
 import styles from "./styles.module.css";
 
 export default function HeroSection() {
+  const phone = "558592584209";
+
+  const message ="Olá! 😄 Vi o site de vocês e quero montar meu açaí 🍧\n" +
+    "Pode me enviar o cardápio do dia, por favor?";
+
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappLink = `https://wa.me/${phone}?text=${encodedMessage}`;
+
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
@@ -11,12 +19,12 @@ export default function HeroSection() {
           title="logo-acai-beats"
           aria-label="logo-acai-beats"
         />
-        <p>O melhor açaí da cidade, entregue na porta sua casa</p>
+        <p>O melhor açaí da cidade, entregue na porta da sua casa</p>
       </div>
 
       <a
         className={styles.linkButton}
-        href="https://wa.me/558592584209?text=Olá!%20😄%20Vi%20o%20site%20de%20vocês%20e%20quero%20montar%20meu%20açaí%20🍧%0APode%20me%20enviar%20o%20cardápio%20do%20dia,%20por%20favor%3F"
+        href={whatsappLink}
         target="_blank"
         title="Fazer pedido"
         aria-label="Fazer pedido"
@@ -24,7 +32,9 @@ export default function HeroSection() {
         Pedir agora
       </a>
       <footer className={styles.footer}>
-        <p><span>⚠️ Cuidado:</span> altas chances de virar seu vício favorito</p>
+        <p>
+          <span>⚠️ Cuidado:</span> altas chances de virar seu vício favorito
+        </p>
       </footer>
     </div>
   );

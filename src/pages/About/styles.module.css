@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+:root {
+  --roxo: #6b21a8;
+  --roxo-vivo: #9333ea;
+  --lilas: #c084fc;
+  --amarelo: #facc15;
+  --branco: #f5f0ff;
+  --escuro: #1a0030;
+}
+
+.container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-image: url("../../assets/img/ImageBackgroundMobile.png");
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.content {
+  display: flex;
+  gap: 1.3rem;
+  flex-direction: column;
+  margin: 3rem;
+  width: 88%;
+  text-align: center;
+}
+.header h1 {
+  letter-spacing: 0;
+  padding-bottom: 1rem;
+  font-size: 1.86rem;
+}
+.header h2 {
+  font-size: 1.3rem;
+}
+
+.story {
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.action {
+  gap: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.action span {
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 700;
+}
+
+.action a {
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+  border: solid 1px #ffffff;
+  background-color: #f79336;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+.action a:active {
+  background-color: greenyellow;
+}
+
+.footer {
+  letter-spacing: 0.1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.1rem;
+  position: absolute;
+  padding: 13px;
+  bottom: 0;
+  font-weight: 500;
+}
+.footer span {
+  font-weight: 700;
+}
+
+@media (min-width: 340px) and (max-width: 600px) {
+  .container {
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    background-image: url("../../assets/img/ImageBackgroundMobile.png");
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    font-family:
+      Arial,
+      Helvetica,
+      sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
+
+  .content {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    margin: 3rem;
+    width: 88%;
+    text-align: center;
+  }
+  .header h1 {
+    letter-spacing: 0;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  .header h2 {
+    font-size: 1.4rem;
+  }
+
+  .story {
+    display: flex;
+    gap: 1rem;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  .action {
+    gap: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+
+  .action span {
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .action a {
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 160px;
+    height: 45px;
+    color: #fff;
+    border: solid 1px #ffffff;
+    background-color: #f79336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 20px;
+  }
+
+  .action a:active {
+    border: solid 2px #ffffff;
+    background-color: #11bf11;
+  }
+
+  .footer {
+    letter-spacing: 0.1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    font-weight: 700;
+  }
+  .footer span {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 999px) {
+  .container {
+    height: 100vh;
+    background-image: url("../../assets/img/ImageDesktop.png");
+    background-size: contain;
+  }
+  .content {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    margin: 3rem;
+    width: 88%;
+    text-align: center;
+  }
+
+  .header h1 {
+    letter-spacing: 0;
+    padding-bottom: 0.7rem;
+    font-size: 3.3rem;
+  }
+
+  .header h2 {
+    font-size: 1.6rem;
+  }
+
+  .story {
+    display: flex;
+    gap: 1.1rem;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 55%;
+  }
+  .action {
+    gap: 1.2rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+
+  .action span {
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .action a {
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    border: solid 1px #ffffff;
+    background-color: #f79336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 29px;
+    padding: 27px 11px;
+  }
+
+  .action a:active {
+    border: solid 2px #ffffff;
+    background-color: #11bf11;
+  }
+
+  .footer {
+    letter-spacing: 0.1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+    position: absolute;
+    padding: 13px;
+    bottom: 0;
+  }
+  .footer span {
+    font-weight: 700;
+  }
+}

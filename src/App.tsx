@@ -1,11 +1,11 @@
-import HomePage from "./components/HomePage"
+import MainRouters from "./routes/MainRouters"
 import "./styles/global.css"
 import "./styles/themes.css"
 function App() {
 
   return (
     <>
-      <HomePage/>
+      <MainRouters/>
     </>
   )
 }
