@@ -13,7 +13,6 @@
   margin: auto;
   background-image: url("../../assets/img/ImageBackgroundMobile.png");
   background-size: cover;
-  background-position: center center;
   overflow: hidden;
   font-family:
     Arial,
@@ -50,12 +49,12 @@
   font-size: 1.3rem;
 }
 
-@media (min-width: 340px) and (max-width:900px) {
+@media (min-width: 340px) and (max-width: 900px) {
   .container {
-    height: 210vh;
+    /* height: 210vh; */
     background-image: url("../../assets/img/ImageBackgroundMobile.png");
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
 
   .header h1 {
@@ -63,42 +62,59 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0;
-    padding-bottom: 1rem;
   }
 
   .header h2 {
+    padding-bottom: 2rem;
     font-size: 1.4rem;
   }
-  
+
   .products {
     display: flex;
     gap: 4rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    background-color: #ed0505;
+    background-color: #ed050500;
     width: 100%;
     border: 0;
     padding: 0;
   }
 
   .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 10px;
-    border: solid 2px white;
-    background-color: #000000;
+    border-radius: 10px 10px 0px 0px ;
+    background-color: #00000000;
     width: 230px;
-    height: 300px;
+    height: 340px;
     transition: all 0.5s ease-in-out;
   }
 
   .image img {
+    border: solid 1px white;
     width: 105%;
     height: 80%;
-    transition: all 0.5s ease-in-out;
+  }
+
+  .image a {
+    border: solid 2px white;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 20%;
+    padding: 10px;
+    background-color: var(--purple);
   }
 }
 

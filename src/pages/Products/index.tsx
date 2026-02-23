@@ -10,28 +10,27 @@ export default function Products() {
       <main className={styles.containerProducts}>
         <header className={styles.header}>
           <h1>Produtos</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur</h2>
         </header>
 
         <section className={styles.products}>
 
           <div className={styles.image}>
             <img src="maracuja.png" alt="" />
-            <a className={styles.button}>
-              comprar
-            </a>
           </div>
 
           <div className={styles.image}>
-            <img src="" alt="" />
+            <img src="maracuja.png" alt="" />
           </div>
 
           <div className={styles.image}>
-            <img src="" alt="" />
+            <img src="maracuja.png" alt="" />
           </div>
 
           <div className={styles.image}>
-            <img src="" alt="" />
+            <img src="maracuja.png" alt="" />
           </div>
+
         </section>
 
       </main>

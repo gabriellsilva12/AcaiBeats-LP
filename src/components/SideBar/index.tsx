@@ -17,9 +17,9 @@ export default function SideBar({ scrollMobile = false }: sideBarProps) {
 
       if (!menu || !activeScrollmobile) return;
       menu.classList.toggle(styles.scrollmobile);
+      activeScrollmobile.classList.toggle(styles.scrollmobile);
       setState(false);
     };
-
     usingSetState();
   }, [state === true]);
 
