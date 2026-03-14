@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+.containerform {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+}
+
+@media (min-width: 999px) {
+}

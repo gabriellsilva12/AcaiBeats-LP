@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+.container {
+
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+.confirmation p {
+  text-align: left;
+  font-size: 15px;
+}
+
+.options {
+  font-size: 20px;
+  color: #c1a381;
+  margin: 0 auto;
+  width: 96%;
+}
+.options { 
+  font-size: 23px;
+}
+
+
+select,
+input[type="number"] {
+  padding: 10px;
+  background-color: #272420;
+  border: none;
+  outline: none;
+  color: #c1a381;
+  cursor: pointer;
+  z-index: 6;
+  width: 100%;
+  height: 56px;
+  margin-top: 16px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 0 auto;
+  color: #c1a381;
+  width: 96%;
+}
+
+.description h3 {
+  font-size: 22px;
+}
+
+.description p {
+  margin: 0 0;
+}
+
+a .spanProducts {
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  color: #5c4831;
+}
+
+.linkButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px black;
+  margin: 0 auto;
+  color: #272420;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #c1a381;
+  cursor: pointer;
+  height: 65px;
+  width: 96%;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+}
+
+@media (min-width: 999px) {
+}

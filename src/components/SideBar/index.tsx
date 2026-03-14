@@ -10,8 +10,8 @@ export default function SideBar({ scrollMobile = false }: sideBarProps) {
   const [state, setState] = useState(scrollMobile);
 
   useEffect(() => {
+    
     const usingSetState = () => {
-      console.log("trueeee");
       const menu = document.querySelector("#menu");
       const activeScrollmobile = document.querySelector("#activeScrollmobile");
 
@@ -20,7 +20,9 @@ export default function SideBar({ scrollMobile = false }: sideBarProps) {
       activeScrollmobile.classList.toggle(styles.scrollmobile);
       setState(false);
     };
+
     usingSetState();
+
   }, [state === true]);
 
   function handleClick() {
