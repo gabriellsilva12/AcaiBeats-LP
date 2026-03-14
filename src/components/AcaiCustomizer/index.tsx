@@ -5,15 +5,12 @@ export default function Acaicustomizer() {
   const [sabor, setSabor] = useState("");
   const [unidade, setUnidade] = useState("");
 
-  // const message = [
-  //   [
-  //     "Olá! 😄 Vi o site de vocês e quero montar meu açaí 🍧\n" +
-  //       "Pode me enviar o cardápio do dia, por favor?",
-  //   ],
-  //   [`Olá! 😄 Vi o site de vocês gostaria de pedir meu açai de ${sabor} 🍧\n`],
-  // ];
+  const message = !sabor
+    ? "Olá! 😄 Vi o site de vocês e quero montar meu açaí 🍧\n Pode me enviar o cardápio do dia, por favor?"
+    : `Olá! 😄 Gostaria de fazer um pedido 🍧
+     \nPedido: \n${unidade} - açaí de ${sabor}\n\nEnviado pelo site.`;
 
-  // const whatsappLink = `https://wa.me/558592584209?text=${!sabor ? message[0] : message[1]}`;
+  const whatsappLink = `https://wa.me/558592584209?text=${encodeURIComponent(message)}`;
 
   // function address() {
 
@@ -22,7 +19,6 @@ export default function Acaicustomizer() {
   return (
     <div className={styles.container}>
       <div className={styles.confirmation}>
-
         <div className={styles.options}>
           <label htmlFor="select">Monte seu açaí 🍧:</label>
           <select
@@ -32,11 +28,11 @@ export default function Acaicustomizer() {
             onChange={(e) => setUnidade(e.target.value)}
           >
             <option value="" disabled>
-              Escolha o tamanho
+              Quantidade:
             </option>
-            <option value="1">1 - unidade</option>
-            <option value="2">2 - unidades</option>
-            <option value="3">3 - unidades</option>
+            <option value="1">1 - Unidade</option>
+            <option value="2">2 - Unidades</option>
+            <option value="3">3 - Unidades</option>
           </select>
 
           <select
@@ -48,9 +44,9 @@ export default function Acaicustomizer() {
             <option value="" disabled>
               Escolha seu sabor:
             </option>
-            <option value="uva">Uva</option>
-            <option value="morango">Morango</option>
-            <option value="maracuja">Maracujá</option>
+            <option value="Creme de Ninho">Creme de Ninho</option>
+            <option value="Ninho e Nutella">Ninho e Nutella</option>
+            <option value="Mousse de Maracujá">Mousse de Maracujá</option>
           </select>
         </div>
 
@@ -60,21 +56,19 @@ export default function Acaicustomizer() {
           <p>Sabor: {!sabor ? "..." : sabor}</p>
         </div>
 
-        <button className={styles.linkButton}>
+        {/* <button className={styles.linkButton}>
           Fazer pedido
           <span className={styles.spanProducts}>
             {!sabor ? "" : `${unidade} - acai de ${sabor}`}
           </span>
-        </button>
+        </button> */}
 
-        {/* <a className={styles.linkButton} href={whatsappLink}>
-              Fazer pedido
-
-              <span className={styles.spanProducts}>
-               {!sabor ? "" : `${unidade} - acai de ${sabor}` }
-              </span>
-
-            </a> */}
+        <a className={styles.linkButton} href={whatsappLink}>
+          Fazer pedido
+          <span className={styles.spanProducts}>
+            {!sabor ? "" : `${unidade} - acai de ${sabor}`}
+          </span>
+        </a>
       </div>
     </div>
   );

@@ -68,7 +68,7 @@
 }
 .uva {
   top: 60px;
-  height: 230vh;
+  height: auto;
   background-color: #5c4831;
   color: #c1a381;
 }
@@ -130,17 +130,23 @@ h3:nth-child(1) {
     width: 96%;
   }
 
-  button {
-  }
   h2 {
     margin-top: 40px;
   }
   .uva {
-    height: 310vh;
-    min-height: 40vh;
+    /* max-width: 230vh;
+    min-height: 190vh; */
   }
 
   .info li {
     padding: 6px 0px;
   }
+}
+
+@media (min-height: 556px) {
+  .uva {
+    height: 230vh;
+    min-height: 40vh;
+  }
+
 }
