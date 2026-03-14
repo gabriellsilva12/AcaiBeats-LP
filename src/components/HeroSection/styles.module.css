@@ -87,8 +87,6 @@
   cursor: pointer;
   border: solid 2px #ffffff;
   background-color: #11bf11;
-  margin-top: 50px;
-  padding: 20px;
   border-radius: 11px;
 }
 
@@ -203,8 +201,6 @@
     cursor: pointer;
     border: solid 2px #ffffff;
     background-color: #11bf11;
-    margin-top: 50px;
-    padding: 20px;
     border-radius: 11px;
   }
 

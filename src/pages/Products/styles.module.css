@@ -1,168 +1,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 .container {
-  color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  position: relative;
+  background-color: #8a4a4a;
   gap: 4rem;
+  position: fixed;
   width: 100%;
-  /* height: 100vh; */
-  margin: auto;
-  background-image: url("../../assets/img/ImageBackgroundMobile.png");
-  background-size: cover;
-  overflow: hidden;
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
 }
 
-.content {
+.card {
+  text-align: center;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.card p {
+  margin: 0 20px;
+}
+
+.imagem {
   display: flex;
-  gap: 1.3rem;
   flex-direction: column;
-  margin: 3rem;
-  width: 88%;
+  align-items: center;
+  justify-content: center;
+}
+.imagem img {
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 83%;
+  margin-bottom: 8px;
+  box-shadow: 0 -1px 7px 1px black;
+}
+
+.laranja,
+.morango,
+.uva {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  gap: 1rem;
+  height: 140vh;
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0 -5px 20px 1px black;
+}
+
+.laranja {
+  background-color: rgb(207, 199, 163);
+  color: rgb(118, 113, 93);
+}
+.morango {
+  top: 30px;
+  background-color: #cbc371;
+  color: #827d48;
+}
+.uva {
+  top: 60px;
+  height: 230vh;
+  background-color: #5c4831;
+  color: #c1a381;
+}
+
+.laranja h1:nth-child(1) {
+  color: rgb(133, 128, 104);
+}
+
+.morango h1:nth-child(1) {
+  color: rgb(124, 119, 68);
+}
+
+.uva h1:nth-child(1) {
+  color: #9c7f5d;
+}
+
+.info {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: rgba(127, 255, 212, 0);
+}
+
+h2 {
+  color: rgb(207, 199, 163);
+}
+h3:nth-child(1) {
+  color: rgb(207, 199, 163);
+}
+
+h3:nth-child(1) {
+  color: rgb(207, 199, 163);
+}
+
+h3:nth-child(1) {
+  color: rgb(207, 199, 163);
+}
+span {
+  text-decoration: line-through;
+  color: red;
+}
+.info li {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 6px 17px;
+}
+
+.info h3 + li {
+  padding-top: 20px;
+}
+
+.info ul {
+  font-size: 18px;
+  padding: 18px 5px;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.confirmation p{
+  text-align: left;
+  font-size: 15px;
+}
+
+select {
+  padding: 10px ;
+  background-color: #272420;
+  border: none;
+  outline: none;
+  color: #c1a381;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
   text-align: center;
 }
 
-.header h1 {
-  letter-spacing: 0;
-  padding-bottom: 1rem;
-  font-size: 1.86rem;
-}
-.header h2 {
-  font-size: 1.3rem;
-}
-
-@media (min-width: 340px) and (max-width: 900px) {
-  .container {
-    /* height: 210vh; */
-    background-image: url("../../assets/img/ImageBackgroundMobile.png");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .header h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0;
-  }
-
-  .header h2 {
-    padding-bottom: 2rem;
-    font-size: 1.4rem;
-  }
-
-  .products {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ed050500;
-    width: 100%;
-    border: 0;
-    padding: 0;
-  }
-
-  .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 10px 10px 0px 0px ;
-    background-color: #00000000;
-    width: 230px;
-    height: 340px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .image img {
-    border: solid 1px white;
-    width: 105%;
-    height: 80%;
-  }
-
-  .image a {
-    border: solid 2px white;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    border-radius: 0px 0px 10px 10px;
-    font-weight: 600;
-    text-align: center;
-    width: 100%;
-    font-size: 2rem;
-    height: 20%;
-    padding: 10px;
-    background-color: var(--purple);
-  }
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px black;
+  margin: 0 auto;
+  color: #272420;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #c1a381;
+  height: 60px;
+  width: 100%;
 }
 
-@media (min-width: 999px) {
-  .container {
-    height: 100vh;
-    background-image: url("../../assets/img/backgroundCleanDesktop.png");
-    background-size: cover;
+@media (min-width: 376px) {
+  .imagem img {
+    width: 96%;
   }
 
-  .header h1 {
-    letter-spacing: 0;
-    padding-bottom: 0.7rem;
-    font-size: 3.3rem;
+  button {
+  }
+  h2 {
+    margin-top: 40px;
+  }
+  .uva {
+    height: 210vh;
+    min-height: 40vh;
   }
 
-  .header h2 {
-    font-size: 1.6rem;
-  }
-
-  .products {
-    display: flex;
-    gap: 4rem;
-    justify-content: center;
-    background-color: #ff00006e;
-    width: 90%;
-    border: 0;
-    padding: 0;
-  }
-
-  .image {
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 10px;
-    border: solid 2px white;
-    background-color: #000000;
-    width: 200px;
-    height: 300px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .image img {
-    width: 105%;
-    height: 80%;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .image:hover {
-    transform: scale(1.1);
+  .info li {
+    padding: 6px 0px;
   }
 }
