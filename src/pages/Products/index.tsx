@@ -34,6 +34,7 @@ export default function Products() {
         </div>
         <p>o favoritooo😮‍💨❤️</p>
       </div>
+      
       <div className={styles.info}>
         <h2>Sabores:</h2>
         <ul>
