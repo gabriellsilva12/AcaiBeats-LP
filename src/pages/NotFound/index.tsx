@@ -1,12 +1,12 @@
-import SideBar from "../../components/SideBar";
 import LogoHeader from "../../components/LogoHeader";
+import SideBar from "../../components/SideBar";
 import styles from "./styles.module.css";
 
 export default function NotFound() {
   return (
     <div className={styles.container}>
       <LogoHeader />
-      <SideBar />
+      <SideBar scrollMobile={false} />
 
       <main className={styles.content}>
         <header className={styles.header}>
