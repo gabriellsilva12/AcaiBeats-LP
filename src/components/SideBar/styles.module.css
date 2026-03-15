@@ -24,7 +24,7 @@
 }
 
 .menu.active .line1 {
-  border: solid 1.5px #b579ff;
+  border: solid 1.5px #d5c6e8;
   background-color: white;
   transform: rotate(-45deg) translate(-8px, 8px);
 }
@@ -32,7 +32,7 @@
   opacity: 0;
 }
 .menu.active .line3 {
-  border: solid 2px #b579ff;
+  border: solid 2px #d5c6e8;
   background-color: white;
   transform: rotate(45deg) translate(-8px, -7px);
 }
@@ -152,7 +152,7 @@
     border-left: solid 3px #fff;
     border-top: solid 3px #ffffff;
     transform: translate(0px, 0px);
-    background-color: var(--purple);
+    background-color: #551874;
     letter-spacing: 0.2rem;
     font-weight: 500;
   }

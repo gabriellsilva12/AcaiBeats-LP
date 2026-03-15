@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 
 type sideBarProps = {
-  scrollMobile?: boolean;
+  scrollMobile: boolean;
 };
 
 export default function SideBar({ scrollMobile = false }: sideBarProps) {

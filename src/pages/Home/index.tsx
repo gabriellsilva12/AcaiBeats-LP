@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className={styles.container}>
       <LogoHeader/>
       <HeroSection/>
-      <SideBar/>
+      <SideBar scrollMobile={false}/>
     </div>
   );
 }

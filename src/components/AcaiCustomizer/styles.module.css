@@ -11,6 +11,8 @@
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
+  transition: 1s;
+
 }
 
 .confirmation p {
@@ -20,7 +22,7 @@
 
 .options {
   font-size: 20px;
-  color: #c1a381;
+  color: rgb(207, 199, 163);
   margin: 0 auto;
   width: 96%;
 }
@@ -33,6 +35,7 @@ select,
 input[type="number"] {
   padding: 10px;
   background-color: #272420;
+  border-radius: 10px;
   border: none;
   outline: none;
   color: #c1a381;
@@ -66,9 +69,11 @@ a .spanProducts {
   text-decoration: none;
   display: block;
   color: #5c4831;
+  transition: 1s;
 }
 
 .linkButton {
+  transition: 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
