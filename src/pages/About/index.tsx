@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className={styles.container}>
       <LogoHeader />
-      <SideBar />
+      <SideBar scrollMobile={false}/>
       {/* <AboutPage /> */}
     </div>
   );
