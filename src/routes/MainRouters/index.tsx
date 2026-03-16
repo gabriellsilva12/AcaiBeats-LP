@@ -4,6 +4,7 @@ import About from "../../pages/About";
 import NotFound from "../../pages/NotFound";
 import Products from "../../pages/Products";
 import FormAddress from "../../components/FormAddress";
+import Location from "../../pages/Location";
 
 export default function MainRouters() {
   return (
@@ -12,6 +13,7 @@ export default function MainRouters() {
         <Route  path="/" element={<Home />}/>
         <Route  path="/about/" element={<About />}/>
         <Route  path="/products/" element={<Products />}/>
+        <Route  path="/location/" element={<Location />}/>
         <Route  path="/test/" element={<FormAddress />}/>
 
         <Route path="*" element={<NotFound/>}/>

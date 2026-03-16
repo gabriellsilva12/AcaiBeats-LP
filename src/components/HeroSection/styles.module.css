@@ -75,7 +75,7 @@
     sans-serif;
   cursor: pointer;
   border: solid 2px #ffffff;
-  background-color: #fd8d24;
+  background-color: #7950ae;
   margin-top: 25px;
   margin-bottom: 29px;
   padding: 20px 24px;
@@ -91,7 +91,7 @@
 .linkButton:active {
   cursor: pointer;
   border: solid 2px #ffffff;
-  background-color: #11bf11;
+  background-color: rgb(129, 169, 68);
   border-radius: 11px;
 }
 

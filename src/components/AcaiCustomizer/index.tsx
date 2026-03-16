@@ -5,10 +5,10 @@ export default function Acaicustomizer() {
   const [sabor, setSabor] = useState("");
   const [unidade, setUnidade] = useState("");
 
-  const message = !sabor
+  const message = !sabor && !unidade
     ? "Olá! 😄 Vi o site de vocês e quero montar meu açaí 🍧\n Pode me enviar o cardápio do dia, por favor?"
     : `Olá! 😄 Gostaria de fazer um pedido 🍧
-     \nPedido: \n${unidade} - açaí de ${sabor}\n\nEnviado pelo site.`;
+     \nPedido: \n${unidade} - açaí de ${sabor}.`;
 
   const whatsappLink = `https://wa.me/558592584209?text=${encodeURIComponent(message)}`;
 
@@ -66,7 +66,7 @@ export default function Acaicustomizer() {
         <a className={styles.linkButton} href={whatsappLink}>
           Fazer pedido
           <span className={styles.spanProducts}>
-            {!sabor ? "" : `${unidade} - acai de ${sabor}`}
+            {!unidade && !sabor ? "" : `${unidade + "- "} acai de ${sabor}`}
           </span>
         </a>
       </div>

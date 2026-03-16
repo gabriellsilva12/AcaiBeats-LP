@@ -52,7 +52,7 @@ export default function SideBar({ scrollMobile = false }: sideBarProps) {
             <Link to="/products">Produtos</Link>
           </p>
           <p>
-            <Link to="/sasas">Localização</Link>
+            <Link to="/location">Localização</Link>
           </p>
           <p>
             <Link to="/about/">Sobre Nós</Link>
